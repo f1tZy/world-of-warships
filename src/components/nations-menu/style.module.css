@@ -1,0 +1,14 @@
+.menuWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 20px 0;
+}
+
+@media screen and (max-width: 500px) {
+  .menuWrapper {
+    margin: 10px 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

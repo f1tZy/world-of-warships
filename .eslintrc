@@ -1,0 +1,71 @@
+{
+  "plugins": ["@typescript-eslint"],
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "eslint-config-prettier",
+    "prettier"
+  ],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"], // Your files extension
+      "parserOptions": {
+        "project": ["./tsconfig.json"] // Specify it only for TypeScript files
+      }
+    }
+  ],
+  "rules": {
+    "react/prop-types": "off",
+    "react/state-in-constructor": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/no-danger": "off",
+    "react/display-name": "off",
+    "import/prefer-default-export": "off",
+    "class-methods-use-this": "off",
+    "curly": ["error"],
+    "no-lonely-if": ["error"],
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "args": "none"
+      }
+    ],
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    // TODO: Заменили на naming-convention, пока не разобрался как настроить
+    //    "@typescript-eslint/camelcase": ["error", {"properties": "never"}],
+    "@typescript-eslint/no-this-alias": "off",
+    "@typescript-eslint/no-use-before-define": [
+      "error",
+      {
+        "functions": false,
+        "classes": false
+      }
+    ],
+    //    TODO: Не нашел нормальное форматирования дат с учетом часового пояса
+    //    "no-restricted-imports": [
+    //      "error",
+    //      {
+    //        "name": "moment",
+    //        "message": "Please use date-fns instead."
+    //      }
+    //    ],
+    "react/jsx-no-target-blank": [
+      "error",
+      {
+        "allowReferrer": true
+      }
+    ],
+    "no-nested-ternary": "error",
+    "react/no-unescaped-entities": "warn"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+export enum NationList {
+  'germany' = 'GERMANY',
+  'europe' = 'EUROPE',
+  'ussr' = 'U.S.S.R.',
+  'italy' = 'ITALY',
+  'netherlands' = 'NETHERLANDS',
+  'usa' = 'U.S.A.',
+  'japan' = 'JAPAN',
+  'uk' = 'U.K.',
+  'france' = 'FRANCE',
+  'pan_asia' = 'PAN-ASIA',
+  'spain' = 'SPAIN',
+  'pan_america' = 'PAN-AMERICA',
+  'commonwealth' = 'COMMONWEALTH',
+}
